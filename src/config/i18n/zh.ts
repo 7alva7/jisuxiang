@@ -33,6 +33,7 @@ export const zh = {
     image_to_ico: tools.image_to_ico.zh,
     cron_generator: tools.cron_generator.zh,
     icon_designer: tools.icon_designer.zh,
+    password_generator: tools.password_generator.zh,
 
     pdf_converter: tools.pdf_converter.zh,
     pdf_manager: tools.pdf_manager.zh,

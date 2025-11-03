@@ -33,6 +33,7 @@ export const en = {
     image_to_ico: tools.image_to_ico.en,
     cron_generator: tools.cron_generator.en,
     icon_designer: tools.icon_designer.en,
+    password_generator: tools.password_generator.en,
 
     pdf_converter: tools.pdf_converter.en,
     pdf_manager: tools.pdf_manager.en,

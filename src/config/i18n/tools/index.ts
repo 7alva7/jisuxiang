@@ -28,6 +28,7 @@ import imageToIco from './image_to_ico';
 import cronGenerator from './cron_generator';
 import { iconDesigner } from './icon_designer';
 import { pdfConverterI18n } from './pdf_converter';
+import { passwordGenerator } from './password_generator';
 
 import { pdfManager } from './pdf_manager';
 import { pdfCompressor } from './pdf_compressor';
@@ -61,6 +62,7 @@ export const tools = {
   image_to_ico: imageToIco,
   cron_generator: cronGenerator,
   icon_designer: iconDesigner,
+  password_generator: passwordGenerator,
 
   pdf_converter: pdfConverterI18n,
 

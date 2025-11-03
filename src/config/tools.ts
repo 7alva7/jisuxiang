@@ -179,6 +179,13 @@ const tools: Tool[] = [
     keywords: ['图标设计', '图标生成', 'icon设计', '图标制作', 'app图标', 'logo设计', 'favicon制作', '图标工具', 'icon designer', 'icon generator', 'tubiao', 'tb', 'sheji', 'sj', 'zhizuo', 'zz']
   },
 
+  {
+    code: 'password_generator',
+    icon: faKey,
+    category: ['code'],
+    keywords: ['密码', '随机密码', '密码生成', '口令', '强密码', 'password', 'random', 'generator', 'security', 'mima', 'mm', 'suiji']
+  },
+
   // PDF工具
 
 
