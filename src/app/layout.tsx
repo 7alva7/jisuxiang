@@ -36,6 +36,24 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        {/* 在首屏渲染前设置主题，避免主题闪烁 */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme') || 'dark';
+                  var docEl = document.documentElement;
+                  if (docEl.getAttribute('data-theme') !== theme) {
+                    docEl.setAttribute('data-theme', theme);
+                  }
+                } catch (e) {
+                  // 忽略
+                }
+              })();
+            `
+          }}
+        />
         {/* 预加载字体和图标资源 */}
         <link rel="preload" href="/_next/static/media/fa-brands-400.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/_next/static/media/fa-solid-900.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
